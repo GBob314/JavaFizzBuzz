@@ -4,18 +4,12 @@ import java.util.Scanner;
  * "Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz”
  *  instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples
  *   of both three and five print “FizzBuzz”."
- *
- *   This has been modified to accept user input and FizzBuzz to the desired number
  */
 public class FizzBuzz {
 
 	public static void main(String[] args) {
 
-		System.out.print("Please enter a number to FizzBuzz to: ");
-		Scanner scanner = new Scanner(System.in);
-		int count = scanner.nextInt();
-
-		for(int i = 1; i<=count; i++){
+		for(int i = 1; i<=100; i++){
 			if(i % 3 == 0 && i % 5 == 0){
 				System.out.print("FizzBuzz");
 			}
